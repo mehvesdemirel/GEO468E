@@ -1,2 +1,2 @@
 # GEO468E
-homework
+# Special Topic in Remote Sensing
