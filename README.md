@@ -2,7 +2,7 @@
 # Special Topic in Remote Sensing
 ![itu logo](itulogo.png)
 ## *Analysis of Burned Area with Remote Sensing : Çanakkale Forest Fire 2020*
-""" Python
+``` Python
 -#number of raster rows
 bandonce4.height
 #number of raster columns
@@ -46,4 +46,4 @@ ndvionceImage.close()
 ndvionce = rasterio.open('C:/Users/PC/mehves/ndvionceImage.tiff')
 fig = plt.figure(figsize=(18,12))
 plot.show(ndvionce)
-"""
+```
