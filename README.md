@@ -9,33 +9,18 @@ Recently, increasing wildfires cause serious damage to trees, vegetation and man
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import rasterio
 from rasterio import plot
 import matplotlib.pyplot as plt
 import numpy as np
 get_ipython().run_line_magic('matplotlib', 'inline')
 
-
-# In[6]:
-
-
 import os
 os.listdir()
-
-
-# In[8]:
-
 
 #import bands as separate 1 band raster
 band4 = rasterio.open('yanginsonrasi_red.tif') #red
 band8 = rasterio.open('yanginsonrasi_nir.tif') #nir
-
-
-# In[15]:
-
 
 #number of raster rows
 band4.height
@@ -81,17 +66,9 @@ ndvi = rasterio.open('C:/Users/PC/mehves/ndviImage.tiff')
 fig = plt.figure(figsize=(18,12))
 plot.show(ndvi)
 
-
-# In[12]:
-
-
 #import bands as separate 1 band raster
 bandonce4 = rasterio.open('Yangınöncesi_ReD.tif') #red
 bandonce8 = rasterio.open('Yangınöncesi_NIR.tif') #nir
-
-
-# In[17]:
-
 
 #number of raster rows
 bandonce4.height
@@ -115,7 +92,6 @@ fig.tight_layout()
 #generate nir and red objects as arrays in float64 format
 red = bandonce4.read(1).astype('float64')
 nir = bandonce8.read(1).astype('float64')
-
 nir
 #ndvi calculation, empty cells or nodata cells are reported as 0
 ndvi=np.where(
@@ -136,12 +112,9 @@ ndvionceImage.close()
 ndvionce = rasterio.open('C:/Users/PC/mehves/ndvionceImage.tiff')
 fig = plt.figure(figsize=(18,12))
 plot.show(ndvionce)
-
-
-# In[ ]:
 ```
-                                                                                  BEFORE FIRE NDVI 
+                                                   BEFORE FIRE NDVI 
 ![BEFORE FIRE NDVI](yanginoncesiNDVI.PNG)
 
-                                                                                   AFTER FIRE NDVI
+                                                   AFTER FIRE NDVI
 ![AFTER FIRE NDVI](yanginsonrasıNDVI.PNG)
