@@ -113,8 +113,9 @@ ndvionce = rasterio.open('C:/Users/PC/mehves/ndvionceImage.tiff')
 fig = plt.figure(figsize=(18,12))
 plot.show(ndvionce)
 ```
-                                                   BEFORE FIRE NDVI 
+                                           BEFORE FIRE NDVI 
 ![BEFORE FIRE NDVI](yanginoncesiNDVI.PNG)
 
-                                                   AFTER FIRE NDVI
+                                           AFTER FIRE NDVI
 ![AFTER FIRE NDVI](yanginsonrasıNDVI.PNG)
+
