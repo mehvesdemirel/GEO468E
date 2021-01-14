@@ -140,8 +140,8 @@ plot.show(ndvionce)
 
 # In[ ]:
 ```
-                                                    BEFORE FIRE NDVI 
+                                                                                  BEFORE FIRE NDVI 
 ![BEFORE FIRE NDVI](yanginoncesiNDVI.PNG)
 
-                                                    AFTER FIRE NDVI
+                                                                                   AFTER FIRE NDVI
 ![AFTER FIRE NDVI](yanginsonrasıNDVI.PNG)
